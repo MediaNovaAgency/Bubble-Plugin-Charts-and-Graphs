@@ -1,0 +1,146 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 500,
+        "width": 800
+    },
+    "display": "Bar Chart 📊",
+    "events": {
+        "ACS": {
+            "caption": "Bar is clicked",
+            "name": "clickedArea"
+        }
+    },
+    "fields": {
+        "ACA": {
+            "caption": "Graph Area color",
+            "default_val": "rgba(95, 206, 250, 1)",
+            "editor": "Color",
+            "name": "areacolor",
+            "rank": 4
+        },
+        "ACC": {
+            "caption": "Title",
+            "default_val": "My Graph Title",
+            "editor": "DynamicValue",
+            "name": "title",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "ACD": {
+            "caption": "Title Alignment",
+            "default_val": "center",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "titlealignment",
+            "optional": true,
+            "options": "start,center,end",
+            "rank": 6
+        },
+        "ACE": {
+            "caption": "Label X",
+            "default_val": "Values X axis",
+            "editor": "DynamicValue",
+            "name": "labelx",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "ACF": {
+            "caption": "Label Y",
+            "default_val": "Values Y Axis",
+            "editor": "DynamicValue",
+            "name": "labely",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "ACG": {
+            "caption": "dataset name",
+            "default_val": "My Chart",
+            "editor": "DynamicValue",
+            "name": "datasetname",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ACH": {
+            "caption": "dataset-name location",
+            "default_val": "top",
+            "editor": "Dropdown",
+            "name": "datasetlocation",
+            "options": "top,right,bottom,left",
+            "rank": 8
+        },
+        "ACI": {
+            "caption": "Tooltip enable",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "tooltippresence",
+            "rank": 9
+        },
+        "ACJ": {
+            "caption": "X Values",
+            "default_val": "January,February,March,April,May,June,July",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "xValues",
+            "rank": 1,
+            "value": "text"
+        },
+        "ACK": {
+            "caption": "Y Values",
+            "default_val": "0,10,5,2,20,30,105",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "yValues",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACL": {
+            "caption": "Vertical Grid Color",
+            "default_val": "rgba(0, 0, 0, 0)",
+            "editor": "Color",
+            "name": "grid_x_color",
+            "rank": 10
+        },
+        "ACM": {
+            "caption": "Horizontal Grid Color",
+            "default_val": "rgba(128, 128, 128, 0.81)",
+            "editor": "Color",
+            "name": "grid_y_color",
+            "rank": 11
+        },
+        "ACN": {
+            "caption": "Values Color",
+            "default_val": "rgba(82, 82, 82, 1)",
+            "editor": "Color",
+            "name": "values_color",
+            "rank": 12
+        },
+        "ACP": {
+            "caption": "Display legend",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaylegend",
+            "rank": 13
+        }
+    },
+    "icon": "ion-arrow-graph-up-right",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "ACR": {
+            "caption": "labelclicked",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "labelclicked",
+            "value": "text"
+        }
+    }
+}

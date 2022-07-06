@@ -1,0 +1,133 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 520,
+        "width": 500
+    },
+    "display": "Pie & Donut Chart 🍩",
+    "events": {
+        "ABm": {
+            "caption": "Area is clicked",
+            "name": "clickedArea"
+        }
+    },
+    "fields": {
+        "ABW": {
+            "caption": "Labels",
+            "default_val": "Color1;Color2; Color3",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "labels",
+            "rank": 2,
+            "value": "text"
+        },
+        "ABX": {
+            "caption": "Values",
+            "default_val": "300; 50; 200",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "values",
+            "rank": 3,
+            "value": "text"
+        },
+        "ABY": {
+            "caption": "Colors",
+            "default_val": "rgb(255, 99, 132); rgb(54, 162, 235); rgb(255, 205, 86)",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "colors",
+            "rank": 4,
+            "value": "text"
+        },
+        "ABa": {
+            "caption": "Chart Title",
+            "default_val": "Media Nova Chart",
+            "editor": "DynamicValue",
+            "name": "title",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABb": {
+            "caption": "Labels Location",
+            "default_val": "top",
+            "editor": "Dropdown",
+            "name": "labelslocation",
+            "options": "top,right,bottom,left",
+            "rank": 5
+        },
+        "ABc": {
+            "caption": "Circumference (min: 0, max: 360)",
+            "default_val": 360,
+            "editor": "StaticNumber",
+            "name": "circumference",
+            "rank": 6
+        },
+        "ABd": {
+            "caption": "Border Color",
+            "default_val": "rgba(255, 255, 255, 1)",
+            "editor": "Color",
+            "name": "bordercolor",
+            "rank": 7
+        },
+        "ABe": {
+            "caption": "Spacing between arcs",
+            "default_val": 20,
+            "editor": "StaticNumber",
+            "name": "spacing",
+            "rank": 8
+        },
+        "ABf": {
+            "caption": "Border radius",
+            "default_val": 10,
+            "editor": "StaticNumber",
+            "name": "borderradius",
+            "rank": 9
+        },
+        "ABg": {
+            "caption": "Donut Hole",
+            "default_val": 180,
+            "editor": "StaticNumber",
+            "name": "donuthole",
+            "rank": 10
+        },
+        "ABi": {
+            "caption": "Tooltip presence",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "tooltippresence",
+            "rank": 11
+        },
+        "ABj": {
+            "caption": "Display legend",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaylegend",
+            "options": "t",
+            "rank": 12
+        },
+        "ABl": {
+            "caption": "This is the Pie and Donut charts. You can define the donut hole to 0 if you want a pie. ",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "icon": "ion-ios-circle-outline",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "ABr": {
+            "caption": "labelClicked",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "labelclicked",
+            "value": "text"
+        }
+    }
+}

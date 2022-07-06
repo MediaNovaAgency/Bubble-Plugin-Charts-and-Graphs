@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "productivity",
+        "1": "analytics",
+        "2": "health & fitness",
+        "3": "data (things)"
+    },
+    "demo_page": "https://bubble.io/page?type=page&name=barchart&id=chartjsweb",
+    "description": "Create Line, bar, Pie and Donut graphs with the Chart and Graphs Plugin by MediaNova.\n\nFeedbacks and discussion about the plugin here:\nhttps://forum.bubble.io/t/new-plugin-free-pie-donut-line-and-bar-with-chartjs/214144",
+    "image": "//s3.amazonaws.com/appforest_uf/f1656678457118x625877687097567700/Screenshot%202022-07-01%20at%2014.26.34.png",
+    "license": "open_source",
+    "link": "https://bubble.io/page?type=page&name=barchart&id=chartjsweb",
+    "name": "Charts and Graphs",
+    "plugin_instructions": "1 - Install the plugin\n2 - Drag & Drop \n3 - Start to develop!"
+}

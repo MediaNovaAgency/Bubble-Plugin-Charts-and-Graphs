@@ -1,0 +1,170 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 500,
+        "width": 800
+    },
+    "display": "Line Chart 📈",
+    "fields": {
+        "AAQ": {
+            "caption": "Smoothness ",
+            "default_val": "0.0",
+            "editor": "Dropdown",
+            "name": "smoothness",
+            "optional": false,
+            "options": "0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,1.0",
+            "rank": 5
+        },
+        "AAR": {
+            "caption": "Interpolation",
+            "default_val": "Default [no smoothness]",
+            "editor": "Dropdown",
+            "name": "interpolation",
+            "options": "Cubic Interpolation - monotone,Cubic Interpolation,Default [no smoothness]",
+            "rank": 4
+        },
+        "AAS": {
+            "caption": "Point Style",
+            "default_val": "●",
+            "editor": "Dropdown",
+            "name": "pointstyle",
+            "options": "⬥,●",
+            "rank": 6
+        },
+        "AAT": {
+            "caption": "Graph Area color",
+            "default_val": "rgba(95, 206, 250, 1)",
+            "editor": "Color",
+            "name": "areacolor",
+            "rank": 7
+        },
+        "AAU": {
+            "caption": "Graph Line color",
+            "default_val": "rgba(117, 117, 117, 1)",
+            "editor": "Color",
+            "name": "linecolor",
+            "rank": 8
+        },
+        "AAV": {
+            "caption": "Title",
+            "default_val": "My Graph Title",
+            "editor": "DynamicValue",
+            "name": "title",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        },
+        "AAW": {
+            "caption": "Title Alignment",
+            "default_val": "center",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "titlealignment",
+            "optional": true,
+            "options": "start,center,end",
+            "rank": 10
+        },
+        "AAX": {
+            "caption": "Label X",
+            "default_val": "Values X axis",
+            "editor": "DynamicValue",
+            "name": "labelx",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AAY": {
+            "caption": "Label Y",
+            "default_val": "Values Y Axis",
+            "editor": "DynamicValue",
+            "name": "labely",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAZ": {
+            "caption": "dataset name",
+            "default_val": "My Chart",
+            "editor": "DynamicValue",
+            "name": "datasetname",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "AAa": {
+            "caption": "dataset-name location",
+            "default_val": "top",
+            "editor": "Dropdown",
+            "name": "datasetlocation",
+            "options": "top,right,bottom,left",
+            "rank": 12
+        },
+        "AAb": {
+            "caption": "Tooltip enable",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "tooltippresence",
+            "rank": 13
+        },
+        "AAc": {
+            "caption": "X Values",
+            "default_val": "January,February,March,April,May,June,July",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "xValues",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAd": {
+            "caption": "Y Values",
+            "default_val": "0,10,5,2,20,30,105",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "yValues",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAe": {
+            "caption": "Vertical Grid Color",
+            "default_val": "rgba(0, 0, 0, 0)",
+            "editor": "Color",
+            "name": "grid_x_color",
+            "rank": 14
+        },
+        "AAf": {
+            "caption": "Horizontal Grid Color",
+            "default_val": "rgba(128, 128, 128, 0.81)",
+            "editor": "Color",
+            "name": "grid_y_color",
+            "rank": 15
+        },
+        "AAg": {
+            "caption": "Values Color",
+            "default_val": "rgba(82, 82, 82, 1)",
+            "editor": "Color",
+            "name": "values_color",
+            "rank": 16
+        },
+        "AAi": {
+            "caption": "line style",
+            "default_val": "—",
+            "editor": "Dropdown",
+            "name": "line_style",
+            "options": "—,– –,--",
+            "rank": 17
+        },
+        "ABk": {
+            "caption": "Display legend",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaylegend",
+            "rank": 18
+        }
+    },
+    "icon": "ion-arrow-graph-up-right",
+    "property_applications": {
+        "resizable": true
+    }
+}
