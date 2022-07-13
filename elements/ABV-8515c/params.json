@@ -89,7 +89,7 @@
         },
         "ABg": {
             "caption": "Donut Hole",
-            "default_val": 180,
+            "default_val": 0,
             "editor": "StaticNumber",
             "name": "donuthole",
             "rank": 10

@@ -1,8 +1,10 @@
 function(instance, properties, context) {
-    
+    	
+    	let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
     	var myChart;
     	var labels = properties.xValues.split(',');
     	var dataList = properties.yValues.split(',')
+        
  
 
         const data = {
@@ -83,12 +85,12 @@ function(instance, properties, context) {
     
     $( document ).ready(function() {
         ctx = document.createElement("CANVAS");
-        ctx.setAttribute("id","chartCanva");
+        ctx.setAttribute("id","chartCanva"+instanceID);
 
         instance.canvas[0].appendChild(ctx)
 
         myChart = new Chart(
-            document.getElementById('chartCanva'),
+            document.getElementById('chartCanva'+instanceID),
             config
         );
     });

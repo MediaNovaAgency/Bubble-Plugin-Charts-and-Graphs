@@ -2,7 +2,7 @@ function(instance, properties, context) {
     
 
     	
-    	
+    	let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
     
     	let arrValues = properties.values.replace(/\s/g, '').split(";")
     	let arrColors = properties.colors.replace(/\s/g, '').split(";")
@@ -63,12 +63,12 @@ function(instance, properties, context) {
     
     $( document ).ready(function() {
         ctx = document.createElement("CANVAS");
-        ctx.setAttribute("id","chartCanva");
+        ctx.setAttribute("id","chartCanva"+instanceID);
 
         instance.canvas[0].appendChild(ctx)
 
         myChart = new Chart(
-            document.getElementById('chartCanva'),
+            document.getElementById("chartCanva"+instanceID),
             config
         );
     });
