@@ -197,6 +197,7 @@
     },
     "icon": "ion-arrow-graph-up-right",
     "property_applications": {
+        "MinWidth": true,
         "resizable": true
     }
 }

@@ -118,6 +118,7 @@
     },
     "icon": "ion-ios-circle-outline",
     "property_applications": {
+        "MinWidth": true,
         "resizable": true
     },
     "states": {
