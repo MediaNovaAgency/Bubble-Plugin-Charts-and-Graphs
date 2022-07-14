@@ -1,6 +1,6 @@
 function(instance, properties, context) {
     
-    	let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
+    	
     
     	var myChart;
     	var borderStyle;
@@ -75,6 +75,7 @@ function(instance, properties, context) {
                           legend: {
                             display: properties.displaylegend,
                             position: properties.datasetlocation,
+                            align: properties.legendalign,
                             labels: {
                               usePointStyle: true,
                             },
@@ -107,13 +108,16 @@ function(instance, properties, context) {
                           },
                           y: {
                             ticks: {
-                                color: properties.values_color
+                                color: properties.values_color,
+                                stepSize: properties.stepsize,
                               },
                             grid: {
                                 color: properties.grid_y_color,
                                 display: true
                             },
                             display: true,
+                            suggestedMin: properties.suggestedmin,
+        					suggestedMax: properties.suggestedmax,
                             title: {
                               display: true,
                               color: properties.values_color,
@@ -125,13 +129,20 @@ function(instance, properties, context) {
         };
     
     $( document ).ready(function() {
+        let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
+        try{
+            instance.canvas[0].removeChild(document.getElementById("chartCanva"+instanceID))
+        }catch(e){
+            console.log("not able to remove chield")
+        }
+        
         ctx = document.createElement("CANVAS");
         ctx.setAttribute("id","chartCanva"+instanceID);
 
         instance.canvas[0].appendChild(ctx)
 
         myChart = new Chart(
-            document.getElementById('chartCanva'+instanceID),
+            document.getElementById("chartCanva"+instanceID),
             config
         );
     });

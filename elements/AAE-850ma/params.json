@@ -161,6 +161,38 @@
             "editor": "Checkbox",
             "name": "displaylegend",
             "rank": 18
+        },
+        "ACV": {
+            "caption": "Legend align",
+            "default_val": "center",
+            "editor": "Dropdown",
+            "name": "legendalign",
+            "options": "start,center,end",
+            "rank": 19
+        },
+        "ACW": {
+            "caption": "stepsize",
+            "default_val": "10",
+            "editor": "DynamicValue",
+            "name": "stepsize",
+            "rank": 20,
+            "value": "text"
+        },
+        "ACX": {
+            "caption": "suggestedmin",
+            "default_val": "0",
+            "editor": "DynamicValue",
+            "name": "suggestedmin",
+            "rank": 21,
+            "value": "text"
+        },
+        "ACY": {
+            "caption": "suggestedmax",
+            "default_val": "120",
+            "editor": "DynamicValue",
+            "name": "suggestedmax",
+            "rank": 22,
+            "value": "text"
         }
     },
     "icon": "ion-arrow-graph-up-right",

@@ -1,5 +1,4 @@
- 
-function(instance, properties) {
+ function(instance, properties) {
     
         var s = document.createElement("script");
         s.type = "text/javascript";
@@ -72,7 +71,7 @@ function(instance, properties) {
             type: 'line',
             data: data,
             options: {
-                		responsive: true,
+                        responsive: true,
                         plugins: {
                           tooltip:{
                              enabled: properties.tooltippresence,
@@ -80,6 +79,7 @@ function(instance, properties) {
                           legend: {
                             display: properties.displaylegend,
                             position: properties.datasetlocation,
+                            align: properties.legendalign,
                             labels: {
                               usePointStyle: true,
                             },
@@ -112,13 +112,16 @@ function(instance, properties) {
                           },
                           y: {
                             ticks: {
-                                color: properties.values_color
+                                color: properties.values_color,
+                                stepSize: properties.stepsize,
                               },
                             grid: {
                                 color: properties.grid_y_color,
                                 display: true
                             },
                             display: true,
+                            suggestedMin: properties.suggestedmin,
+        					suggestedMax: properties.suggestedmax,
                             title: {
                               display: true,
                               color: properties.values_color,
@@ -126,7 +129,7 @@ function(instance, properties) {
                             }
                           }
                         }
-                      } 
+                      }  
         };
     
     $(window).on( "load", function() { 
